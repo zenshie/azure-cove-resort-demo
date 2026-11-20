@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Azure Cove Resort - a peaceful tropical escape by the sea." />
+  <title>Azure Cove Resort | Your Coastal Escape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Azure Cove Resort home">
+      <span class="brand-mark">A<span>✦</span></span>
+      <span><strong>AZURE COVE</strong><small>RESORT & RETREAT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#stay">Stay</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#booking">Book your stay <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">A LITTLE CLOSER TO PARADISE</p>
+        <h1>Find your own<br><em>piece of blue.</em></h1>
+        <p class="hero-copy">Slow mornings, salt-kissed air, and sunsets that make you forget to check the time.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#stay">Explore the resort <span>↗</span></a>
+          <a class="text-link light-link" href="#experience">Discover the experience <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>YOUR COASTAL HIDEAWAY</span></div>
+      <div class="hero-location">TROPICAL SHORES · PHILIPPINES</div>
+    </section>
+
+    <section class="booking-strip" id="booking">
+      <div class="booking-intro"><span class="eyebrow">PLAN YOUR ESCAPE</span><strong>Make room for rest.</strong></div>
+      <form id="bookingForm" class="booking-form">
+        <label>Check in<input type="date" id="checkIn" required></label>
+        <label>Check out<input type="date" id="checkOut" required></label>
+        <label>Guests<select id="guests"><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+        <button class="btn btn-dark" type="submit">Check availability <span>→</span></button>
+      </form>
+      <p class="booking-message" id="bookingMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="intro-label"><span class="eyebrow">WELCOME TO AZURE COVE</span><span class="tiny-rule"></span><span class="muted">01 / THE ESCAPE</span></div>
+      <div class="intro-grid">
+        <h2>Where the days<br>feel <em>beautifully</em><br>unhurried.</h2>
+        <div class="intro-text"><p class="lead">Some places ask you to do more. Here, we invite you to do a little less.</p><p>Wake to the sound of the waves, wander barefoot along the shore, and let the warm island breeze set the pace. Azure Cove is a fictional resort concept designed for your next unforgettable getaway.</p><a class="under-link" href="#experience">Get to know us <span>↗</span></a></div>
+      </div>
+      <div class="intro-image"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1800&q=85" alt="Tropical resort swimming pool surrounded by palm trees"><div class="image-caption">A place to pause, breathe, and begin again.</div></div>
+    </section>
+
+    <section class="stay section-pad" id="stay">
+      <div class="section-heading">
+        <div><span class="eyebrow">REST YOUR WAY</span><h2>Stay a little <em>longer.</em></h2></div>
+        <p>Thoughtful spaces, soft linens, and room for the moments that matter.</p>
+      </div>
+      <div class="room-grid">
+        <article class="room-card"><div class="room-image"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85" alt="Elegant resort bedroom"><span class="room-tag">MOST LOVED</span></div><div class="room-info"><div><h3>Coastal Deluxe</h3><p>Warm textures · Garden view · King bed</p></div><strong>₱4,500<small>/ night</small></strong></div><a href="#booking" class="room-link">Explore room <span>↗</span></a></article>
+        <article class="room-card"><div class="room-image"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85" alt="Private pool villa at a tropical resort"></div><div class="room-info"><div><h3>Oceanview Villa</h3><p>Private terrace · Sea view · King bed</p></div><strong>₱7,800<small>/ night</small></strong></div><a href="#booking" class="room-link">Explore room <span>↗</span></a></article>
+        <article class="room-card"><div class="room-image"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=85" alt="Bright spacious family resort suite"></div><div class="room-info"><div><h3>Family Hideaway</h3><p>Two bedrooms · Lounge area · Garden view</p></div><strong>₱9,200<small>/ night</small></strong></div><a href="#booking" class="room-link">Explore room <span>↗</span></a></article>
+      </div>
+      <p class="demo-disclaimer">Sample room types and rates for demonstration only. Replace with the resort's actual accommodation details.</p>
+    </section>
+
+    <section class="experience section-pad" id="experience">
+      <div class="experience-photo"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85" alt="Turquoise ocean waves rolling onto a tropical beach"></div>
+      <div class="experience-copy"><span class="eyebrow">MORE THAN A GETAWAY</span><h2>Make memories<br>between the <em>moments.</em></h2><p>From slow afternoons by the pool to adventures out on the water, make your stay as restful or as full as you like.</p>
+        <div class="experience-list">
+          <div><span>01</span><section><h3>Poolside living</h3><p>Stretch out, cool off, and let the afternoon drift by.</p></section><b>↗</b></div>
+          <div><span>02</span><section><h3>Island adventures</h3><p>Discover nearby coves, coastlines, and local culture.</p></section><b>↗</b></div>
+          <div><span>03</span><section><h3>Dining by the sea</h3><p>Share fresh flavors and long, lingering meals.</p></section><b>↗</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-heading"><div><span class="eyebrow">A GLIMPSE OF AZURE</span><h2>Take the <em>scenic route.</em></h2></div><p>A few little snapshots of the slower, sunnier side of life.</p></div>
+      <div class="gallery-grid">
+        <img class="g-tall" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Beautiful tropical beach with clear water">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85" alt="Beach loungers beneath palm trees">
+        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85" alt="Infinity pool overlooking the sea">
+        <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=900&q=85" alt="Tropical resort with palm trees">
+        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=85" alt="Tropical island coastline">
+      </div>
+    </section>
+
+    <section class="quote-band"><span>✳</span><p>“The best souvenirs are the moments<br>you wish could last a little longer.”</p><small>THE AZURE COVE WAY</small></section>
+
+    <section class="contact section-pad" id="contact">
+      <div><span class="eyebrow">LET'S GET YOU HERE</span><h2>Your next escape<br>starts <em>right here.</em></h2><p>Have a question or planning a special stay? Send us an inquiry and our team will be happy to help.</p>
+        <div class="contact-details"><div><small>CALL US</small><strong>+63 917 000 0000</strong></div><div><small>EMAIL</small><strong>hello@azurecove.example</strong></div><div><small>LOCATION</small><strong>Coastal Road, Philippines</strong></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>Your name<input id="guestName" type="text" placeholder="Full name" required></label>
+        <label>Email address<input id="guestEmail" type="email" placeholder="you@example.com" required></label>
+        <label>What can we help with?<select id="inquiryType"><option>Room availability</option><option>Rates and packages</option><option>Events and celebrations</option><option>Other inquiry</option></select></label>
+        <label>Your message<textarea id="guestMessage" rows="4" placeholder="Tell us a little about your plans..." required></textarea></label>
+        <button class="btn btn-dark" type="submit">Prepare inquiry <span>↗</span></button>
+        <p class="form-note" id="contactMessage" aria-live="polite">Demo form: prepares an email draft, it does not send or store inquiries.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">A<span>✦</span></span><span><strong>AZURE COVE</strong><small>RESORT & RETREAT</small></span></a><p>Find your own piece of blue.</p><div><a href="#stay">Stay</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> Azure Cove Resort. Demo concept website.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
